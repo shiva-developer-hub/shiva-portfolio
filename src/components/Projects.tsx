@@ -15,10 +15,16 @@ function ProjectCard({ title, description, tech, github, demo }: (typeof PROJECT
       <div className="mt-3 flex flex-wrap gap-2">
         {tech.map(t => <span key={t} className="badge">{t}</span>)}
       </div>
-      <div className="mt-4 flex gap-3">
-        <a href={github} target="_blank" rel="noopener" className="btn-ghost">GitHub</a>
-        <a href={demo} target="_blank" rel="noopener" className="btn-primary">Live Demo</a>
-      </div>
+      {(github || demo) && (
+        <div className="mt-4 flex gap-3">
+          {github && (
+            <a href={github} target="_blank" rel="noopener" className="btn-ghost">GitHub</a>
+          )}
+          {demo && (
+            <a href={demo} target="_blank" rel="noopener" className="btn-primary">Live Demo</a>
+          )}
+        </div>
+      )}
     </motion.div>
   )
 }

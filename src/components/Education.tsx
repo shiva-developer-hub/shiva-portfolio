@@ -1,4 +1,4 @@
-import { CERTIFICATIONS, EDUCATION } from '../data/site'
+import { EDUCATION } from '../data/site'
 import { motion } from 'framer-motion'
 
 export default function Education() {
@@ -12,28 +12,23 @@ export default function Education() {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold mb-6"
         >
-          Education & Certifications
+          Education
         </motion.h2>
 
-        <div className="grid lg:grid-cols-2 gap-6">
-          <div className="card p-5">
-            <h3 className="font-semibold mb-3">Education</h3>
-            <ul className="grid gap-2">
-              {EDUCATION.map((e, i) => (
-                <li key={i} className="text-neutral-700 dark:text-neutral-300">
-                  {e.title} — {e.year}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="card p-5">
-            <h3 className="font-semibold mb-3">Certifications</h3>
-            <div className="flex flex-wrap gap-2">
-              {CERTIFICATIONS.map((c) => (
-                <span key={c} className="badge">{c}</span>
-              ))}
-            </div>
-          </div>
+        <div className="card p-5">
+          <ul className="grid gap-3">
+            {EDUCATION.map((e, i) => (
+              <li key={i} className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="font-medium">{e.title}</p>
+                  {e.school && (
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400">{e.school}</p>
+                  )}
+                </div>
+                <span className="text-sm text-neutral-600 dark:text-neutral-400 whitespace-nowrap">{e.year}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

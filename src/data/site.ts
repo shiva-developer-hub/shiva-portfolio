@@ -1,16 +1,14 @@
 export const SITE = {
   name: "Kalluri Shiva Kumar | Full Stack & AI Developer",
   title: "Hi, I'm Shiva 👋",
-  subtitle:
-    "Full Stack Developer | Java • Spring Boot • React.js • Cloud • DevOps • AI",
-  tagline:
-    "I build scalable web apps, cloud-native CI/CD pipelines, and AI-powered solutions (LLMs, RAG, LangGraph).",
+  subtitle: "Building with Java, Spring Boot, React, and Cloud-native DevOps",
+  tagline: "From microservices to LLM/RAG—production-ready, performant, and secure.",
   email: "shivakumar601630@gmail.com",
   phone: "+91 70932 20229",
   linkedin: "https://linkedin.com/in/shiva-kumar-kalluri-093b11299",
-  github: "https://github.com/your-username",
+  github: "https://github.com/shiva-developer-hub",
   location: "Hyderabad, India",
-  resume: "/resume/Kalluri_Shiva_Kumar_Resume.pdf", // place your PDF at public/resume/
+  resume: "/resume/shiva-resume.pdf", // place your PDF at public/resume/
 };
 
 // Kept the original keys to avoid breaking components, expanded with accurate skills
@@ -30,7 +28,7 @@ export const SKILLS = {
     "OpenFeign",
     "REST APIs",
   ],
-  database: ["MongoDB", "MySQL", "Elasticsearch"],
+  database: ["MongoDB", "MySQL", "Elasticsearch","ClickHouse"],
   cloud: [
     "GCP",
     "Azure",
@@ -52,6 +50,23 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
+    title: "Every-Hour Deliverability Report (Automated)",
+    role: "Backend & Automation",
+    description:
+      "Hourly pipeline: Python tool → ClickHouse → AI summary → Zapier → Slack. Pulls deliverability metrics, generates concise OpenAI summaries of trends/spikes/anomalies, builds rich Slack Block Kit messages, and posts to Slack via Zapier for real-time monitoring—reducing manual reporting.",
+    tech: [
+      "Python",
+      "ClickHouse (HTTP API/driver)",
+      "OpenAI (text summary)",
+      "Slack Block Kit",
+      "Zapier Webhooks",
+      "CRON",
+      "Docker",
+    ],
+    github: "",
+    demo: "",
+  },
+  {
     title: "EngageBay AI Copilot",
     role: "Full Stack Developer",
     description:
@@ -66,23 +81,23 @@ export const PROJECTS = [
     ],
     github: "",
     demo: "",
-  },
-  {
-    title: "DevOps CI/CD Pipeline Demo",
-    description:
-      "Automated containerized deployments using Docker, Kubernetes, and GitHub Actions across cloud environments.",
-    tech: ["Docker", "Kubernetes", "GitHub Actions", "GCP/Azure/AWS"],
-    github: "",
-    demo: "",
-  },
-  {
-    title: "CRM System Modules",
-    description:
-      "Scalable microservices for CRM features with Spring Boot, Kafka, and MongoDB.",
-    tech: ["Spring Boot", "Kafka", "MongoDB", "React"],
-    github: "",
-    demo: "",
-  },
+  }
+//   {
+//     title: "DevOps CI/CD Pipeline Demo",
+//     description:
+//       "Automated containerized deployments using Docker, Kubernetes, and GitHub Actions across cloud environments.",
+//     tech: ["Docker", "Kubernetes", "GitHub Actions", "GCP/Azure/AWS"],
+//     github: "",
+//     demo: "",
+//   },
+//   {
+//     title: "CRM System Modules",
+//     description:
+//       "Scalable microservices for CRM features with Spring Boot, Kafka, and MongoDB.",
+//     tech: ["Spring Boot", "Kafka", "MongoDB", "React"],
+//     github: "",
+//     demo: "",
+//   },
 ] as const;
 
 export const EXPERIENCE = [
@@ -121,4 +136,3 @@ export const EDUCATION = [
   },
 ];
 
-export const CERTIFICATIONS: string[] = [];

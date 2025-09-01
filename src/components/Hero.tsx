@@ -38,16 +38,17 @@ export default function Hero() {
           >
             <a href="#projects" className="btn-primary">View Projects</a>
             <a href="#contact" className="btn-ghost">Contact Me</a>
+            <a href={SITE.resume} download className="btn-ghost" aria-label="Download Resume">Download Resume</a>
           </motion.div>
         </div>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="justify-self-center w-40 h-40 sm:w-52 sm:h-52 rounded-full ring-4 ring-brand-500/20 bg-gradient-to-br from-brand-500/20 to-brand-700/10 flex items-center justify-center text-5xl"
-          aria-label="Shiva avatar placeholder"
+          className="justify-self-center w-40 h-40 sm:w-52 sm:h-52 rounded-full ring-4 ring-brand-500/20 bg-gradient-to-br from-brand-500/20 to-brand-700/10 flex items-center justify-center overflow-hidden"
+          aria-label="Shiva profile image"
         >
-          👨‍💻
+          <img src="/images/profile.jpeg" alt="Shiva profile" className="w-full h-full object-cover" />
         </motion.div>
       </div>
     </section>

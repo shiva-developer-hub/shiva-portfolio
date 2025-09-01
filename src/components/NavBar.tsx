@@ -55,6 +55,7 @@ export default function NavBar() {
               <div className="flex gap-4 pt-2">
                 <a href={SITE.github} target="_blank" className="hover:text-brand-600" aria-label="GitHub"><FiGithub /></a>
                 <a href={SITE.linkedin} target="_blank" className="hover:text-brand-600" aria-label="LinkedIn"><FiLinkedin /></a>
+                <a href={SITE.resume} download className="hover:text-brand-600" aria-label="Download Resume">Resume</a>
               </div>
             </ul>
           </div>

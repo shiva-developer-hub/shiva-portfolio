@@ -24,6 +24,7 @@ A modern, responsive portfolio for Full Stack Developer Shiva.
 - New site from Git.
 - Build command: `npm run build`
 - Publish directory: `dist`
+  
 
 ## Customize
 - Edit `src/data/site.ts` for profile, links, projects.
